@@ -1,0 +1,10 @@
+build:
+  dockerfile: Dockerfile
+
+services:
+  - type: web
+    name: my-app
+    port: 8080
+    build: .
+    env:
+      - VARIABLE_NAME=value
